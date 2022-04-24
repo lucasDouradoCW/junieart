@@ -4,7 +4,9 @@
         <meta charset = UTF-8>
         <meta name = "description" content = "Pet Portrait Info">
         <title>Junie's Digital Character Art</title>
-        <link rel = "stylesheet" href = "StyleSheet.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="/js/funcs.js"></script>
+        <link rel = "stylesheet" href = "/css/StyleSheet.css" />
     </head>
     <body>
         <div class = "topheader">
@@ -23,59 +25,56 @@
                 </table>
             </nav>
         </div>
-       <br>
-       <div style = "text-align: center;">
-        <img alt ="Half body digital piece of a girl next to a quagsire"; style = "width: 23%"; src = "Images/JunieTrainer.png">
-        <img alt ="Half Body digital art of a female character eating ice cream"; style = "width: 23%"; src = "Images/AnnHB.png">
-        <img alt ="Half body of a tired looking anime style character"; style = "width: 23%"; src = "Images/CloricaHBWM.png">
-        <img alt ="Full body of a happy anime style character in a white dress"; style = "width: 23%"; src = "Images/SophiaFB.png">
-    </div>
-    <p style = "font-size: 21px; text-align: center;">Info: Done on Clip Studio Paint, characters can be drawn as full body, half body, or shoulders up! Backgrounds can be colour gradients with simple details in the background.</p>
-    <hr>
-    <p style = "font-size: 45px;">Pricing:</p>
-    <table>
-        <tr>
-            <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Head Only (Or Simple Pokémon Art):</p></td>
-            <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$30 CAD   (Approximately $24.63 USD)</p></td>
-        </tr>
-        <tr>
-            <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Half Body:</p></td>
-            <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$45 CAD   (Approximately $36.95 USD)</p></td>
-        </tr>
-        <tr>
-            <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Full Body:</p></td>
-            <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$60 CAD   (Approximately $49.21 USD)</p></td>
-        </tr>
-        <tr>
-            <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Full Body Design Pencil Sketch (flat colours):</p></td>
-            <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$20 CAD   (Approximately $16.42 USD)</p></td>
-        </tr>
-    </table>
-    <br>
-    <div style ="text-align: center;">
+        <br>
+        <div id="digitalcharactertopdiv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <p style = "font-size: 21px; text-align: center;">Info: Done on Clip Studio Paint, characters can be drawn as full body, half body, or shoulders up! Backgrounds can be colour gradients with simple details in the background.</p>
+        <hr>
+        <p style = "font-size: 45px;">Pricing:</p>
         <table>
             <tr>
-                <td style= "text-align: center; width: 22.68%">Head Only</td>
-                <td style= "text-align: center; width: 22.68%">Simple Pokémon</td>
-                <td style= "text-align: center; width: 17%">Half Body</td>
-                <td style= "text-align: center; width: 17%">Full Body</td>
-                <td style= "text-align: center; width: 17%">Character Sketch</td>
+                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Head Only (Or Simple Pokémon Art):</p></td>
+                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$30 CAD   (Approximately $24.63 USD)</p></td>
             </tr>
             <tr>
-                <td><img alt ="Head only art of an anime style character"; style = "width: 100%"; src = "Images/LucasPFP.jpg"></td>
-                <td><img alt ="Art of a Pokemon in a cartoonish style"; style = "width: 100%"; src = "Images/Oshawott.png"></td>
-                <td><img alt ="Half body digital piece of a green haired girl"; style = "width: 100%"; src = "Images/SaffronHB.png"></td>
-                <td><img alt ="Full body digital piece of a man holding a fishing rod"; style = "width: 100%"; src = "Images/DylasWM.png"></td>
-                <td><img alt ="Full body digital Sketch of a Green Haired Character"; style = "width: 100%"; src = "Images/Leila.png"></td>
+                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Half Body:</p></td>
+                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$45 CAD   (Approximately $36.95 USD)</p></td>
+            </tr>
+            <tr>
+                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Full Body:</p></td>
+                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$60 CAD   (Approximately $49.21 USD)</p></td>
+            </tr>
+            <tr>
+                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Full Body Design Pencil Sketch (flat colours):</p></td>
+                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$20 CAD   (Approximately $16.42 USD)</p></td>
             </tr>
         </table>
-    </div>
-    <hr>
-    <p>Check out the requirements and payment info <a href="Terms.html">here!</a></p>
-    <p>Contact me with your commission or any questions <a href = "ContactMe.html">here!</a></p>
+        <br>
+        <div style ="text-align: center;">
+            <table>
+                <tr>
+                    <td style= "text-align: center; width: 22.68%">Head Only</td>
+                    <td style= "text-align: center; width: 22.68%">Simple Pokémon</td>
+                    <td style= "text-align: center; width: 17%">Half Body</td>
+                    <td style= "text-align: center; width: 17%">Full Body</td>
+                    <td style= "text-align: center; width: 17%">Character Sketch</td>
+                </tr>
+                <tr>
+                    <td><img style = "width: 100%"; src = "/images/digitalcharactersquare/IrisPFP.png"></td>
+                    <td><img style = "width: 100%"; src = "/images/digitalcharactersquare/Oshawott.png"></td>
+                    <td><img style = "width: 100%"; src = "/images/digitalcharacterrectangle/XiaoPai.png"></td>
+                    <td><img style = "width: 100%"; src = "/images/digitalcharacterrectangle/FreyFB.png"></td>
+                    <td><img style = "width: 100%"; src = "/images/digitalcharacterrectangle/zzCandiRef.png"></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <h2 style="font-size: 50px; text-align: center;">GALLERY</h2>
+        <div id="digitalcharacterrectanglediv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <br>
+        <div id="digitalcharactersquarediv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <hr>
+        <p>Check out the requirements and payment info <a href="Terms.html">here!</a></p>
+        <p>Contact me with your commission or any questions <a href = "ContactMe.html">here!</a></p>
+        <script src="/js/digitalcharacter.js"></script>
     </body>
-
-    <footer>
-
-    </footer>
 </html>

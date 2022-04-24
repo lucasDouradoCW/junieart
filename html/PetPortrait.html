@@ -4,10 +4,12 @@
         <meta charset = UTF-8>
         <meta name = "description" content = "Pet Portrait Info">
         <title>Junie's Pet Portraits</title>
-        <link rel = "stylesheet" href = "StyleSheet.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="/js/funcs.js"></script>
+        <link rel = "stylesheet" href = "/css/StyleSheet.css" />
     </head>
     <body>
-       <div class = "topheader">
+        <div class = "topheader">
             <header style="font-size: 50px; text-align: center;">Junie's Pet Portraits</header>
             <hr>
             <nav>
@@ -23,17 +25,8 @@
                 </table>
             </nav>
         </div>
-       <br>
-    
-
-
-
-        <div style = "text-align: center;">
-            <img alt ="Pencil crayon portrait of a calico cat"; style = "width: 23%"; src = "Images/LucyPortrait.jpeg">
-            <img alt ="Pencil crayon portrait of two gerbils"; style = "width: 50.2%"; src = "Images/RoLuna">
-            <img alt ="Pencil crayon portrait of a black and brown dog"; style = "width: 22.4%"; src = "Images/kado_dec__2020.jpeg">
-        </div>
-        <!--<hr>-->
+        <br>
+        <div id="petportraittopdiv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
         <p style = "font-size: 25px;">Info: Drawn on 6" by 9" paper, <a href="petportraitrefs.html" style = "font-size: 25px;">tinted or white</a>, with pencil crayons and paint pen! Can be portraits of any animal but reference pictures are required.</p>
         <hr>
         <p style = "font-size: 45px;">Pricing:</p>
@@ -48,11 +41,13 @@
             </tr>
         </table>
         <hr>
+        <h2 style="font-size: 50px; text-align: center;">GALLERY</h2>
+        <div id="petportraitvertdiv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <br>
+        <div id="petportraithordiv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <hr>
         <p>Check out the requirements and payment info <a href="Terms.html">here!</a></p>
         <p>Contact me with your commission or any questions <a href = "ContactMe.html">here!</a></p>
+        <script src="/js/petportrait.js"></script>
     </body>
-
-    <footer>
-
-    </footer>
 </html>
