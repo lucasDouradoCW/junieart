@@ -1,17 +1,33 @@
 body {
-    background-color: rgb(34, 32, 34);
+    background-color: #222022;
     color:rgb(239, 255, 255);
     font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     color:rgb(118, 235, 229);
-    font-size: 30px;
 }
 
 header {
-    font-size: 50px; 
+    font-size: 30px; 
     text-align: center;
+    padding: 0.5%;
+}
+
+nav {
+    font-size: 20px; 
+    text-align: center;
+    padding: 0.5%;
+    border-top: solid;
+    border-top-color: rgb(112, 109, 133);
+    border-top-width: 1px;
+}
+
+nav>a>div {
+    display:inline-block; 
+    width:16%;
 }
 
 td {
@@ -19,9 +35,44 @@ td {
 }
 
 .topheader {
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(239, 255, 255);
     position: sticky; 
     top: 0mm; 
     background-color: rgb(52, 50, 66); 
     width: 100%;
-    margin: 0 auto; left:0mm
+    z-index: 100;
+}
+
+.indexbanners {
+    display:flex; 
+    justify-content:center;
+    flex-flow:row wrap;
+    border: solid #3d363e;
+    border-width: 3px;
+    border-radius: 25px;
+    background-color: #2b262b;
+}
+
+.imgautofill {
+    display:flex; 
+    justify-content:center; 
+    flex-flow:row wrap;
+}
+
+.galleryimg {
+    opacity: 1.0;
+    transition: opacity 0.3s;
+}
+
+.galleryimg:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.topdiv {
+    display: flex; 
+    justify-content: center; 
+    flex-flow: row wrap;
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    populate("petportraittop", "25%");
-    populate("petportraitvert", "15%");
-    populate("petportraithor", "30%");
+    populate("petportraittop", "24%", "2px", false, "", "");
+    populate("petportraitvert", "15%", "2px", true, "petportraitdisplay", "class='galleryimg'");
+    populate("petportraithor", "30%", "2px", true, "petportraitdisplay", "class='galleryimg'");
 });

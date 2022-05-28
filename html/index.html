@@ -4,31 +4,50 @@
         <meta charset = UTF-8>
         <meta name = "description" content = "A website with pricing, examples and information about commissions for Juniper, or @LatiasArts">
         <title>Junie's Commissions</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="/js/funcs.js"></script>
         <link rel = "stylesheet" href = "/css/StyleSheet.css" />
     </head>
     <body>
         <div class = "topheader">
-            <header style="font-size: 50px; text-align: center;">Junie's Art: Home</header>
-            <hr>
+            <header>Junie's Art</header>
         </div>
         <br>
-        <table>
-            <tr>
-                <td style = "width: 25%;"><a href="PetPortrait.html">Pet Portraits</a></td>
-                <td style = "width: 25%;"><a href="PhysicalCharacter.html">Physical Character</a></td>
-                <td style = "width: 25%;"><a href="DigitalCharacter.html">Digital Character</a></td>
-                <td style = "width: 25%;"><a href="Emotes.html">Emotes</a></td>
-            </tr>
-            <tr>
-                <td><a href="PetPortrait.html"><img width="100%"; src="/images/index/EddieSquare.png"></a></td>
-                <td><a href="PhysicalCharacter.html"><img width="100%"; src="/images/index/LeonSquare.png"></a></td>
-                <td><a href="DigitalCharacter.html"><img width="100%"; src="/images/index/IrisPFP.png"></a></td>
-                <td><a href="Emotes.html"><img width="100%"; src="/images/index/AlcremieHugBig.png"></a></td>
-            </tr>
-        </table>
+        <a href="PetPortrait.html" style="text-decoration:none;">
+            <div class="indexbanners">
+                <h3>Pet Portraits</h3>
+                <div class="imgautofill" id="indexpetportraitdiv"></div>
+                <br>
+            </div>
+        </a>
+        <br>
+        <a href="PhysicalCharacter.html" style="text-decoration:none;">
+            <div class="indexbanners">
+                <h3>Physical Art</h3>
+                <div class="imgautofill" id="indexphysicalcharacterdiv"></div>
+                <br>
+            </div>
+        </a>
+        <br>
+        <a href="DigitalCharacter.html" style="text-decoration:none;">
+            <div class="indexbanners">
+                <h3>Digital Art</h3>
+                <div class="imgautofill" id="indexdigitalcharacterdiv"></div>
+                <br>
+            </div>
+        </a>
+        <br>
+        <a href="Emotes.html" style="text-decoration:none;">
+            <div class="indexbanners">
+                <h3>Emotes</h3>
+                <div class="imgautofill" id="indexemotesdiv"></div>
+                <br>
+            </div>
+        </a>
         <hr>
         <a href = "Terms.html">Terms and Information</a>
         <br>
         <a href = "ContactMe.html">Contact me!</a>
+        <script src="/js/index.js"></script>
     </body>
 </html>

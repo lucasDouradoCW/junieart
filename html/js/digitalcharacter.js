@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    populate("digitalcharactertop", "25%");
-    populate("digitalcharacterrectangle", "15%");
-    populate("digitalcharactersquare", "15%");
+    populate("digitalcharactertop", "24%", "2px", false, "", "");
+    populate("digitalcharacterrectangle", "15%", "2px", true, "digitalcharacterdisplay", "class='galleryimg'");
+    populate("digitalcharactersquare", "15%", "2px", true, "digitalcharacterdisplay", "class='galleryimg'");
 });
