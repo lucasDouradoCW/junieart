@@ -21,5 +21,5 @@ function populate(dirName, width, margin, toDisplay, displayDiv, cla){
 }
 
 function display(div, img){
-    $('#' + div).html('<img style= "display: block; margin-left: auto; margin-right: auto; height: 75vh; max-width: 75vw;" src="' + img + '">');
+    $('#' + div).html('<img style= "display: block; margin-left: auto; margin-right: auto; height: auto; width: auto; max-width: 75vw; max-height: 75vh;" src="' + img + '">');
 }
