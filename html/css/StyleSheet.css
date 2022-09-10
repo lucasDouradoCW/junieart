@@ -1,9 +1,13 @@
 body {
     background-color: #222022;
     color:rgb(239, 255, 255);
-    font-size: 30px;
+    font-size: 2.5vw;
     margin: 0;
     padding: 0;
+}
+
+label {
+    white-space: pre;
 }
 
 a {
@@ -11,13 +15,13 @@ a {
 }
 
 header {
-    font-size: 30px; 
+    font-size: 2.9vw; 
     text-align: center;
     padding: 0.5%;
 }
 
 nav {
-    font-size: 20px; 
+    font-size: 2vw; 
     text-align: center;
     padding: 0.5%;
     border-top: solid;
@@ -55,6 +59,18 @@ td {
     background-color: #2b262b;
 }
 
+.indexcomm {
+    display: inline-block;
+    text-align: center;
+    border: solid #265b63 3px;
+    border-radius: 25px;
+    background-color: #244d4c;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
 .imgautofill {
     display:flex; 
     justify-content:center; 
@@ -81,4 +97,341 @@ td {
     text-align: center;
     margin-top: 5px;
     white-space: pre;
+}
+
+.pagesform {
+    display: block;
+    text-align: center;
+    border: solid #3d363e;
+    border-width: 3px;
+    border-radius: 25px;
+    background-color: #2b262b;
+}
+
+.colourgroup, .writinggroup, .physicalbodygroup, .outlinegroup, .digitalbodygroup, .backgroundgroup {
+    display: block;
+    padding-top: 10px;
+}
+
+.unselectedcolour, .unselectedwriting, .unselectedphysicalbody, .unselectedoutline, .unselecteddigitalbody, .unselectedbackground {
+    display: inline-block;
+    border: solid #695a69;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 3vw;
+    background-color: #4d444d;
+    filter: drop-shadow(5px 10px 3px #1e1a1f);
+    transition: background-color 0.2s, border 0.2s, filter 0.2s;
+}
+
+.unselectedcolour:hover, .unselectedwriting:hover, .unselectedphysicalbody:hover, .unselectedoutline:hover, .unselecteddigitalbody:hover, .unselectedbackground:hover {
+    border: solid #544954;
+    background-color: #3b353b;
+    cursor: pointer;
+}
+
+.unselectedcolour:active, .unselectedwriting:active, .unselectedphysicalbody:active, .unselectedoutline:active, .unselecteddigitalbody:active {
+    border: solid #403740;
+    background-color: #2d282d;
+    filter: drop-shadow(5px 10px 3px #2b262b);
+    cursor: pointer;
+}
+
+.selectedcolour, .selectedwriting, .selectedphysicalbody, .selectedoutline, .selecteddigitalbody, .selectedbackground {
+    display: inline-block;
+    border: solid #403740;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 3vw;
+    background-color: #2d282d;
+    filter: drop-shadow(5px 10px 3px #2b262b);
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.selectedcolour:hover, .selectedoutline:hover {
+    cursor: pointer;
+}
+
+.colourgroup>div>img, .writinggroup>div>img {
+    display: block;
+    width: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.physicalbodygroup>div>img, .outlinegroup>div>img, .backgroundgroup>div>img {
+    display: block;
+    width: 18vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.digitalbig {
+    display: block;
+    width: 17vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.digitalsmall {
+    display: block;
+    width: 12.75vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.ilb {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.submit {
+    display: inline-block;
+    border: solid #265b63 3px;
+    border-radius: 25px;
+    background-color: #244d4c;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    filter: drop-shadow(5px 10px 3px #121113);
+    transition: background-color 0.2s, border 0.2s, filter 0.2s;
+}
+
+.submit:hover {
+    border: solid 3px #19454b;
+    background-color: #163d3d;
+    cursor: pointer;
+}
+
+.submit:active {
+    filter: drop-shadow(5px 10px 3px #222022);
+    border: solid 3px #12373c;
+    background-color: #0a2020;
+}
+
+.calculate {
+    display: inline-block;
+    border: solid #695a69 3px;
+    border-radius: 25px;
+    background-color: #4d444d;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    filter: drop-shadow(5px 10px 3px #121113);
+    transition: background-color 0.2s, border 0.2s, filter 0.2s;
+}
+
+.calculate:hover {
+    border: solid 3px #544954;
+    background-color: #3b353b;
+    cursor: pointer;
+}
+
+.calculate:active {
+    filter: drop-shadow(5px 10px 3px #222022);
+    border: solid 3px #403740;
+    background-color: #2d282d;
+}
+
+.nodec {
+    text-decoration:none;
+}
+
+.infop {
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.pricingp {
+    font-size: 3.5vw;
+}
+
+.pricingtleft {
+    width: 33%;
+    text-align: left; 
+    font-size: 2.3vw;
+}
+
+.pricingtright {
+    width: 33%;
+    text-align: left; 
+    font-size: 2vw;
+}
+
+.tac {
+    text-align: center;
+}
+
+h2 {
+    font-size: 4.5vw;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 2.3vw;
+    text-align: center;
+    margin-top: 0;
+}
+
+.gallerydiv {
+    display:flex;
+    justify-content:center;
+    flex-flow:row wrap;
+}
+
+.writingtext>td {
+    width: 33%;
+}
+
+.writingimg>td>img {
+    width: 50%;
+}
+
+.colourtext>td {
+    width: 14%;
+}
+
+.colourimg>td>img {
+    width: 80%;
+}
+
+.headonly {
+    width: 98%;
+}
+
+.halfbody {
+    width: 98%;
+}
+
+.fullbody {
+    width: 100%;
+}
+
+.digitaltextbig {
+    text-align: center;
+    width: 22.68%;
+}
+
+.digitaltextsmall {
+    text-align: center;
+    width: 17%;
+}
+
+.digitalimg>td>img {
+    width: 100%;
+}
+
+.nameinput {
+    padding-right: 11.4vw;
+}
+
+.namesinput {
+    padding-right: 10.6vw;
+}
+
+.name2input {
+    padding-right: 1vw;
+}
+
+.phraseinput {
+    padding-right: 10.8vw;
+}
+
+.tat {
+    text-align: top;
+}
+
+.commname {
+    padding-right: 0.1vw;
+}
+
+.flexcentre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricepad {
+    padding-right: 10vw;
+}
+
+.headonlytext {
+    text-align: center;
+    width: 16.95%;
+}
+
+.halfbodytext {
+    text-align: center;
+    width: 16.92%;
+}
+
+.fullbodytext {
+    text-align: center;
+    width: 16.53%;
+}
+
+.evenspace {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.outline {
+    width: 30vw;
+}
+
+input[type=checkbox] {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+input[type=radio] {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.invisible {
+    display: none;
+}
+
+select, option {
+    font-size: 2.5vw;
+}
+
+.fullwidth {
+    width: 98vw;
+}
+
+.backgroundimg>td>img {
+    width: 22vw;
+}
+
+.backgroundtable>td {
+    width: 30vw;
+}
+
+table.pricingtable, table.pricingtable td {
+    border-collapse: collapse;
+    border-bottom: solid 1px #655e65;
 }

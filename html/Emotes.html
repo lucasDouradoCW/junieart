@@ -17,34 +17,41 @@
                 <a href="PhysicalCharacter.html"><div>Physical Art</div></a>
                 <a href="DigitalCharacter.html"><div>Digital Art</div></a>
                 <a href="Emotes.html"><div>Emotes</div></a>
-                <a href="ContactMe.html"><div>Contact Me</div></a>
+                <a href="ContactMe.html"><div>Commission Me</div></a>
             </nav>
         </div>
         <br>
         <div id="emotestopdiv" class="topdiv"></div>
-        <p style = "font-size: 23px; text-align: center;">Info: Done on Clip Studio Paint, emotes can be of humans or animals! Available in sizes for both Twitch and Discord emotes, and easy to see on any background!</p>
+        <p class="infop">Info: Done on Clip Studio Paint, emotes can be of humans or animals! Available in sizes for both Twitch and Discord emotes, and easy to see on any background!</p>
         <hr>
-        <p style = "font-size: 45px;">Pricing:</p>
-        <table>
+        <span class="pricingp">Pricing:</span>
+        <br><br>
+        <table class="pricingtable">
             <tr>
-                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>One Emote:</p></td>
-                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$20 CAD   (Approximately $16.42 USD)</p></td>
+                <td class="pricingtleft">One Emote:</td>
+                <td class="pricingtright">$20 CAD   (<span id="emoteusd1"></span> USD)</td>
             </tr>
             <tr>
-                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Each emote after 3 Commissioned:</p></td>
-                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$17 CAD   (Approximately $13.96 USD)</p></td>
+                <td class="pricingtleft">Each emote after 3 Commissioned:</td>
+                <td class="pricingtright">$17 CAD   (<span id="emoteusd2"></span> USD)</td>
             </tr>
         </table>
+        <br>
+        <div class="tac"><a href="ContactMe.html" class="nodec">
+            <div class="indexcomm">
+                Interested in commissioning me? Click here!
+                <br>
+            </div>
+        </a></div>
         <hr>
-        <h2 style="font-size: 50px; text-align: center; margin-bottom: 0;">GALLERY</h2>
-        <h4 style="font-size: 25px; text-align: center; margin-top: 0;">(click to expand beneath)</h4>
-        <div id="emotesdiv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <h2>GALLERY</h2>
+        <h4>(click to expand beneath)</h4>
+        <div id="emotesdiv" class="gallerydiv"></div>
         <br>
         <div id="emotesdisplay"></div>
         <div id="emotesinfo" class="info"></div>
         <hr>
-        <p>Check out the requirements and payment info <a href="Terms.html">here!</a></p>
-        <p>Contact me with your commission or any questions <a href = "ContactMe.html">here!</a></p>
+        <a href="Terms.html">Terms and conditions</a>
         <script src="/js/emotes.js"></script>
     </body>
 </html>

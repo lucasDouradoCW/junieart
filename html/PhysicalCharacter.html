@@ -17,53 +17,71 @@
                 <a href="PhysicalCharacter.html"><div>Physical Art</div></a>
                 <a href="DigitalCharacter.html"><div>Digital Art</div></a>
                 <a href="Emotes.html"><div>Emotes</div></a>
-                <a href="ContactMe.html"><div>Contact Me</div></a>
+                <a href="ContactMe.html"><div>Commission Me</div></a>
             </nav>
         </div>
         <div id="physicalcharactertopdiv" class="topdiv"></div>
-        <p style = "font-size: 16px; text-align: center;">Info: Done on paper with alcohol based markers, pencil crayons and outline pen, characters can be drawn as full body, half body, or shoulders up! Outlines can be done in outline pen (right three) or pencil crayon (left one).</p>
+        <p class="infop">Info: Done on paper with alcohol based markers, pencil crayons and outline pen, characters can be drawn as full body, half body, or shoulders up! Outlines can be done in outline pen (right three) or pencil crayon (left one).</p>
         <hr>
-        <p style = "font-size: 45px;">Pricing:</p>
-        <table>
+        <span class="pricingp">Pricing:</span>
+        <br><br>
+        <table class="pricingtable">
             <tr>
-                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Head Only:</p></td>
-                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$30 CAD   (Approximately $24.63 USD)</p></td>
+                <td class="pricingtleft">Head Only:</td>
+                <td class="pricingtright">$45 CAD   (<span id="physicalusd1"></span> USD)</td>
             </tr>
             <tr>
-                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Half Body:</p></td>
-                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$45 CAD   (Approximately $36.95 USD)</p></td>
+                <td class="pricingtleft">Half Body:</td>
+                <td class="pricingtright">$60 CAD + $40/extra character  (<span id="physicalusd2"></span> USD + <span id="physicalusd3"></span>)</td>
             </tr>
             <tr>
-                <td style = "width: 33%; text-align: left; font-size: 30px;"><p>Full Body:</p></td>
-                <td style = "width: 33%; text-align: left; font-size: 25px;"><p>$60 CAD   (Approximately $49.21 USD)</p></td>
+                <td class="pricingtleft">Full Body:</td>
+                <td class="pricingtright">$75 CAD + $50/extra character  (<span id="physicalusd4"></span> USD + <span id="physicalusd5"></span>)</td>
             </tr>
         </table>
         <br>
         <hr>
-        <div style ="text-align: center;">
+        <div class="tac">
             <table>
                 <tr>
-                    <td style= "text-align: center; width: 16.95%">Head Only</td>
-                    <td style= "text-align: center; width: 16.92%">Half Body</td>
-                    <td style= "text-align: center; width: 16.53%">Full Body</td>
+                    <td class="headonlytext">Head Only</td>
+                    <td class="halfbodytext">Half Body</td>
+                    <td class="fullbodytext">Full Body</td>
                 </tr>
                 <tr>
-                    <td><img alt ="Head only art of an anime style character"; style = "width: 98%"; src = "/images/physicalcharacter/LeonPhys.png"></td>
-                    <td><img alt ="Half body physical piece of a pink haired girl"; style = "width: 98%"; src = "/images/physicalcharacter/HildaPhys.png"></td>
-                    <td><img alt ="Full body physical piece of a woman in a blue dress"; style = "width: 100%"; src = "/images/physicalcharacter/Kaede2Phys.png"></td>
+                    <td><img alt ="Head only art of an anime style character"; class="headonly" src = "/images/physicalcharacter/LeonPhys.png"></td>
+                    <td><img alt ="Half body physical piece of a pink haired girl" class="halfbody" src = "/images/physicalcharacter/HildaPhys.png"></td>
+                    <td><img alt ="Full body physical piece of a woman in a blue dress" class="fullbody" src = "/images/physicalcharacter/Kaede2Phys.png"></td>
                 </tr>
             </table>
         </div>
+        <br>
+        <div class="evenspace">
+            <div class="tac">
+                <label for="pencil" class="block">Pencil Crayon</label>
+                <img class="outline" src = "/images/physicalcharacter/LeonPhys.png">
+            </div>
+            <div class="tac">
+                <label for="pen" class="block">Outline Pen</label>
+                <img class="outline" src = "/images/physicalcharacter/BylethPhys.jpg">
+            </div>
+        </div>
+        <br>
+        <div class="tac"><a href="ContactMe.html" class="nodec">
+            <div class="indexcomm">
+                Interested in commissioning me? Click here!
+                <br>
+            </div>
+        </a></div>
         <hr>
-        <h2 style="font-size: 50px; text-align: center; margin-bottom: 0;">GALLERY</h2>
-        <h4 style="font-size: 25px; text-align: center; margin-top: 0;">(click to expand beneath)</h4>
-        <div id="physicalcharacterdiv" style="display:flex; justify-content:center; flex-flow:row wrap"></div>
+        <h2>GALLERY</h2>
+        <h4>(click to expand beneath)</h4>
+        <div id="physicalcharacterdiv" class="gallerydiv"></div>
         <br>
         <div id="physicalcharacterdisplay"></div>
         <div id="physicalcharacterinfo" class="info"></div>
         <hr>
-        <p>Check out the requirements and payment info <a href="Terms.html">here!</a></p>
-        <p>Contact me with your commission or any questions <a href = "ContactMe.html">here!</a></p>
+        <a href="Terms.html">Terms and conditions</a>
         <script src="/js/physicalcharacter.js"></script>
     </body>
 </html>

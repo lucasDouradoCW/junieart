@@ -4,11 +4,14 @@
         <meta charset = UTF-8>
         <meta name = "description" content = "Pet Portrait Info">
         <title>Contact me!</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="/js/funcs.js"></script>
+        <script src="/js/pophtml.js"></script>
         <link rel = "stylesheet" href = "/css/StyleSheet.css" />
     </head>
     <body>
         <div class = "topheader">
-            <header>Contact Me!</header>
+            <header>Commission Me!</header>
             <nav>
                 <a href="index.html"><div>Home</div></a>
                 <a href="PetPortrait.html"><div>Pet Portraits</div></a>
@@ -18,12 +21,142 @@
                 <a href="ContactMe.html"><div>Contact Me</div></a>
             </nav>
         </div>
-        <p>Hey! Make sure you've read through the important information before commissioning me <a href="Terms.html">here!</a></p>
-        <p>Once you've read through that, and would like to commission me, get in touch!</p>
+        <p>If you have any questions, or if the form below isn't working, contact me directly through one of options below!</p>
         <ul>
             <li><a href="https://twitter.com/ShinyLatias13">Twitter</a></li>
             <li><a href="https://www.facebook.com/Latiasartpetportraits/">Facebook</a></li>
-            <li>Email: juniper.caye@gmail.com<a></li>
+            <li>Email: juniper.caye@gmail.com</li>
         </ul>
+    
+        <h1 class="tac">Commission Me!</h1>
+        <label for="typecomm">What kind of commission are you interested in?  </label>
+        <select name="typecomm" id="typecomm">
+            <option value=""></option>
+            <option value="petportrait">Pet Portrait</option>
+            <option value="physicalcharacter">Physical Character</option>
+            <option value="digitalcharacter">Digital Character</option>
+            <option value="emote">Emote</option>
+        </select>
+        <br>
+        <div id="petportraitform" class="invisible">
+            <label for="npetportraitpages">Number of pages:  </label>
+            <select name="npetportraitpages" id="npetportraitpages">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <div id="petportraitformauto"></div>
+        </div>
+        
+        <div id="physicalcharacterform" class="invisible">
+            <label for="nphysicalpages">Number of pages:  </label>
+            <select name="nphysicalpages" id="nphysicalpages">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <div id="physicalcharacterformauto"></div>
+        </div>
+        
+        <div id="digitalcharacterform" class="invisible">
+            <label for="ndigitaldrawings">Number of drawings:  </label>
+            <select name="ndigitalpages" id="ndigitalpages">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <div id="digitalcharacterformauto"></div>
+        </div>
+        
+        <div id="emoteform" class="invisible">
+            <br>
+            <div class="tac">
+                <label for="nemotes">How many emotes would you like to commission? </label>
+                <input type="text" name="nemotes" id="nemotes">
+            </div>
+        </div>
+
+        <div id="deliverydiv" class="tat invisible">
+            <p>If you would like the physical version of your commission delivered, I will cover the shipping cost! You don't need to provide me the shipping address now; I'll ask for it when the commission is ready to be sent! If you choose not to have it delivered, I will still send you a high-quality digital scan.</p>
+            <div class="flex">
+                <div class="ilb" ><label for="deliveryoption">Delivery option: </label></div>
+                <div class="ilb">
+                    <div class="block">
+                        <input type="radio" name="deliveryoption" id="canada" value="canada">
+                        <label for="canada">Deliver to Canada</label>
+                    </div>
+                    <div class="block">
+                        <input type="radio" name="deliveryoption" id="us" value="us">
+                        <label for="us">Deliver to the United States</label>
+                    </div>
+                    <div class="block">
+                        <input type="radio" name="deliveryoption" id="international" value="international">
+                        <label for="international">Deliver outside Canada and the US</label>
+                    </div>
+                    <div class="block">
+                        <input type="radio" name="deliveryoption" id="nodelivery" value="nodelivery">
+                        <label for="nodelivery">Don't deliver</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="contactinfo" class="tac invisible">
+            <label for="contactinfo">Contact information</label>
+            <div>
+                <label for="commname" class="commname">Name: </label>
+                <input name="commname" type="text" size="30" maxlength="100" id="commname">
+            </div>
+            <div>
+                <label for="commemail">Email: </label>
+                <input name="commemail" type="text" size="30" maxlength="100" id="commemail">
+            </div>
+        </div>
+        <br>
+        <div class="tac invisible" id="expressdiv">
+            <p>Commissions can take a while to complete. If you would like to have yours delivered faster, I can do that for an extra 30% of the cost! Note that this might not be possible if your commission is very large, check out the <a href="Terms.html">terms and conditions</a> for more details. Check the box below if you are interested in this:</p>
+            <input type="checkbox" id="express" name="express" value="express">
+            <label for="express">Express Delivery</label>
+        </div>
+        <br>
+        <div id="commentdiv" class="tac invisible">
+            <label class="block" for="comments">Any additional comments you would like to include? </label>
+            <textarea id="commentarea" cols="100" rows="5" maxlength="500"></textarea>
+        </div>
+        <br><br>
+        <div id="calcdiv" class="tac invisible">
+            <p class="block">Make sure to click the button below to calculate delivery time and price before submitting!</p>
+            <div name="calculate" id="calculate" class="calculate" onclick="update()">Calculate</div>
+        </div>
+        <div class="tac invisible" id="deliverytime"><p>Estimated time of delivery: <span id="deliveryspan">0</span> days</p></div>
+        <div id="pricesub" class="flexcentre invisible">
+            <label for="submit" class="pricepad"><b>Total: $<span id="cadspan">0.00</span> CAD ($<span id="usdspan">0.00</span> USD) </b></label>
+            <div name="submit" id="submit" class="submit" onclick="submit()">Submit Commission</div>
+        </div>
+        <br>
+        <p id="agree" class="invisible tac">By clicking Submit Commission, you agree to the <a href="Terms.html">terms and conditions</a>.</p>
+        
+        <script src="/js/contactme.js"></script>
     </body>
 </html>

@@ -35,3 +35,38 @@ function display(div, img){
         }
     });
 }
+
+function convert(cadVal, dest, d = 0, dollar = true){
+    $.ajax({
+        type: 'post',
+        data: {value: cadVal, decimals: d},
+        url: '/php/test.php', 
+        success: function (data){
+            console.log(data);
+            if(dollar){
+                $('#' + dest).html('$' + data);
+            } else{
+                $('#' + dest).html(data);
+            }
+            console.log(d);
+        },
+        fail: function(error){
+            console.log(error);
+            $('#' + dest).innerHTML('?'); 
+        }
+    });
+}
+
+function testMail(){
+    console.log("TESTMAIL");
+    $.ajax({
+        type: 'post',
+        url: '/php/testMail.php', 
+        success: function (data){
+            console.log("SUCCESS"); 
+        },
+        fail: function(error){
+            console.log(error); 
+        }
+    });
+}
