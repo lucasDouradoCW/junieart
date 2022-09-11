@@ -102,7 +102,7 @@ td {
     display: inline-block;
     border: solid #695a69;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     font-size: 3vw;
     background-color: #4d444d;
     filter: drop-shadow(5px 10px 3px #1e1a1f);
@@ -126,7 +126,7 @@ td {
     display: inline-block;
     border: solid #403740;
     border-width: 2px;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     font-size: 3vw;
     background-color: #2d282d;
     filter: drop-shadow(5px 10px 3px #2b262b);
@@ -192,7 +192,7 @@ td {
 .submit {
     display: inline-block;
     border: solid #265b63 3px;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     background-color: #244d4c;
     padding-left: 1%;
     padding-right: 1%;
@@ -217,7 +217,7 @@ td {
 .calculate {
     display: inline-block;
     border: solid #695a69 3px;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     background-color: #4d444d;
     padding-left: 1%;
     padding-right: 1%;
