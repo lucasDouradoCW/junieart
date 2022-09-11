@@ -1,6 +1,6 @@
 body {
     background-color: #222022;
-    color:rgb(239, 255, 255);
+    color: #EFFFFF;
     font-size: 2.5vw;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ label {
 }
 
 a {
-    color:rgb(118, 235, 229);
+    color: #76EBE5;
 }
 
 header {
@@ -24,14 +24,12 @@ nav {
     font-size: 2vw; 
     text-align: center;
     padding: 0.5%;
-    border-top: solid;
-    border-top-color: rgb(112, 109, 133);
-    border-top-width: 1px;
+    border-top: solid 1px #706D85;
 }
 
 nav>a>div {
-    display:inline-block; 
-    width:15%;
+    display: inline-block; 
+    width: 15%;
 }
 
 td {
@@ -39,30 +37,24 @@ td {
 }
 
 .topheader {
-    border-bottom: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: rgb(239, 255, 255);
+    border-bottom: solid 2px #EFFFFF;
     position: sticky; 
     top: 0mm; 
-    background-color: rgb(52, 50, 66); 
+    background-color: #343242; 
     width: 100%;
     z-index: 100;
 }
 
 .indexbanners {
-    display:flex; 
-    justify-content:center;
-    flex-flow:row wrap;
-    border: solid #3d363e;
-    border-width: 3px;
+    border: solid 3px #3d363e;
     border-radius: 25px;
     background-color: #2b262b;
 }
 
-.indexcomm {
+.commbutton {
     display: inline-block;
     text-align: center;
-    border: solid #265b63 3px;
+    border: solid 3px #265b63;
     border-radius: 25px;
     background-color: #244d4c;
     padding-left: 1%;
@@ -71,10 +63,10 @@ td {
     padding-bottom: 0.5%;
 }
 
-.imgautofill {
-    display:flex; 
-    justify-content:center; 
-    flex-flow:row wrap;
+.wrap {
+    display: flex; 
+    justify-content: center; 
+    flex-flow: row wrap;
 }
 
 .galleryimg {
@@ -87,12 +79,6 @@ td {
     cursor: pointer;
 }
 
-.topdiv {
-    display: flex; 
-    justify-content: center; 
-    flex-flow: row wrap;
-}
-
 .info {
     text-align: center;
     margin-top: 5px;
@@ -102,8 +88,7 @@ td {
 .pagesform {
     display: block;
     text-align: center;
-    border: solid #3d363e;
-    border-width: 3px;
+    border: solid 3px #3d363e;
     border-radius: 25px;
     background-color: #2b262b;
 }
