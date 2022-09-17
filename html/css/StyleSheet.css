@@ -69,6 +69,12 @@ td {
     flex-flow: row wrap;
 }
 
+.nowrap {
+    display: flex; 
+    justify-content: center; 
+    flex-flow: row nowrap;
+}
+
 .galleryimg {
     opacity: 1.0;
     transition: opacity 0.3s;

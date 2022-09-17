@@ -10,7 +10,7 @@ $(document).ready(function(){
     convert(20, "digitalusd9");
     convert(10, "digitalusd10");
     convert(20, "digitalusd11");
-    populate("digitalcharactertop", "24%", "2px", false, "", "");
+    populate("digitalcharactertop", "23%", "2px", false, "", "");
     populate("digitalcharacterrectangle", "15%", "2px", true, "digitalcharacter", "class='galleryimg'");
     populate("digitalcharactersquare", "15%", "2px", true, "digitalcharacter", "class='galleryimg'");
 });
