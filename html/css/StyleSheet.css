@@ -47,7 +47,7 @@ td {
 
 .indexbanners {
     border: solid 3px #3d363e;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     background-color: #2b262b;
 }
 
@@ -55,7 +55,7 @@ td {
     display: inline-block;
     text-align: center;
     border: solid 3px #265b63;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     background-color: #244d4c;
     padding-left: 1%;
     padding-right: 1%;
@@ -89,7 +89,7 @@ td {
     display: block;
     text-align: center;
     border: solid 3px #3d363e;
-    border-radius: 25px;
+    border-radius: 1.2vw;
     background-color: #2b262b;
 }
 
