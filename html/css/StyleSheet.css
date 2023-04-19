@@ -115,6 +115,10 @@ td {
     transition: background-color 0.2s, border 0.2s, filter 0.2s;
 }
 
+.digitalbodygroup>div>label {
+    font-size: 2vw;
+}
+
 .unselectedcolour:hover, .unselectedwriting:hover, .unselectedphysicalbody:hover, .unselectedoutline:hover, .unselecteddigitalbody:hover, .unselectedbackground:hover {
     border: solid #544954;
     background-color: #3b353b;
@@ -165,7 +169,7 @@ td {
 
 .digitalbig {
     display: block;
-    width: 17vw;
+    width: 14.05vw;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5vw;
@@ -175,7 +179,17 @@ td {
 
 .digitalsmall {
     display: block;
-    width: 12.75vw;
+    width: 10.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.digitalref {
+    display: block;
+    width: 21.25vw;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5vw;
@@ -322,12 +336,17 @@ h4 {
 
 .digitaltextbig {
     text-align: center;
-    width: 22.68%;
+    width: 16.75%;
 }
 
 .digitaltextsmall {
     text-align: center;
-    width: 17%;
+    width: 12.6%;
+}
+
+.digitaltextref {
+    text-align: center;
+    width: 25%;
 }
 
 .digitalimg>td>img {

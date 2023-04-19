@@ -159,11 +159,11 @@ function createDigitalCharacterPage(n) {
         <div class="digitalbodygroup">
             <div id="headonlydigital${n}" class="unselecteddigitalbody" onclick="selectDigitalBody('headonlydigital', ${n})">
                 <label for="headonlydigital">Head Only</label>
-                <img src="/images/digitalcharactersquare/IrisPFP.png" name="headonlydigital" class="digitalbig">
+                <img src="/images/digitalcharactersquare/1Irispfp2023.png" name="headonlydigital" class="digitalbig">
             </div>
             <div id="simpledigital${n}" class="unselecteddigitalbody" onclick="selectDigitalBody('simpledigital', ${n})">
                 <label for="simpledigital">Simple</label>
-                <img src="/images/digitalcharactersquare/Oshawott2.png" name="simpledigital" class="digitalbig">
+                <img src="/images/digitalcharactersquare/Swablu.png" name="simpledigital" class="digitalbig">
             </div>
             <div id="halfbodydigital${n}" class="unselecteddigitalbody" onclick="selectDigitalBody('halfbodydigital', ${n})">
                 <label for="halfbodydigital">Half Body</label>
@@ -171,11 +171,11 @@ function createDigitalCharacterPage(n) {
             </div>
             <div id="fullbodydigital${n}" class="unselecteddigitalbody" onclick="selectDigitalBody('fullbodydigital', ${n})">
                 <label for="fullbodydigital">Full Body</label>
-                <img src="/images/digitalcharacterrectangle/FreyFB.png" name="fullbodydigital" class="digitalsmall">
+                <img src="/images/digitalcharacterrectangle/SaffronPride.png" name="fullbodydigital" class="digitalsmall">
             </div>
             <div id="referencedigital${n}" class="unselecteddigitalbody" onclick="selectDigitalBody('referencedigital', ${n})">
                 <label for="referencedigital">Reference</label>
-                <img src="/images/digitalcharacterrectangle/zzCandiRefNew.png" name="referencedigital" class="digitalsmall">
+                <img src="/images/digitalcharacterref/Mira2023.png" name="referencedigital" class="digitalref">
             </div>
         </div>
         <br>
@@ -224,11 +224,11 @@ function createDigitalCharacterPage(n) {
             </div>
             <div id="simplebackground${n}" class="unselectedbackground" onclick="selectBackground('simplebackground', ${n})">
                 <label for="simplebackground">Simple</label>
-                <img src = "/images/digitalcharacterrectangle/Chie.png" name="simplebackground">
+                <img src = "/images/digitalcharacterrectangle/MiraAnaHug.png" name="simplebackground">
             </div>
             <div id="detailedbackground${n}" class="unselectedbackground" onclick="selectBackground('detailedbackground', ${n})">
                 <label for="detailedbackground">Detailed</label>
-                <img src = "/images/digitalcharacterrectangle/SandyComm3.png" name="detailedbackground">
+                <img src = "/images/digitalcharacterrectangle/SaffronCrochet.png" name="detailedbackground">
             </div>
         </div>
         <br>
