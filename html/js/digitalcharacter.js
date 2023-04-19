@@ -11,6 +11,7 @@ $(document).ready(function(){
     convert(10, "digitalusd10");
     convert(20, "digitalusd11");
     populate("digitalcharactertop", "23%", "2px", false, "", "");
-    populate("digitalcharacterrectangle", "15%", "2px", true, "digitalcharacter", "class='galleryimg'");
-    populate("digitalcharactersquare", "15%", "2px", true, "digitalcharacter", "class='galleryimg'");
+    populate("digitalcharacterrectangle", "7.5%", "2px", true, "digitalcharacter", "class='galleryimg'");
+    populate("digitalcharactersquare", "7.5%", "2px", true, "digitalcharacter", "class='galleryimg'");
+    populate("digitalcharacterref", "15%", "2px", true, "digitalcharacter", "class='galleryimg'");
 });
